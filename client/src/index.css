@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0B111C;
+}
+
+
+.gradient-bg-welcome {
+  background-image:#ffa3a3;background-image:  
+  radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0, transparent 50%),  
+  radial-gradient(at 80% 0%, hsla(189,100%,83%,1) 0, transparent 50%),  
+  radial-gradient(at 0% 50%, hsla(0,100%,93%,1) 0, transparent 50%),  
+  radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0, transparent 50%),  
+  radial-gradient(at 0% 100%, hsla(23,100%,91%,1) 0, transparent 50%),  
+  radial-gradient(at 80% 100%, hsla(242,100%,88%,1) 0, transparent 50%),  
+  radial-gradient(at 0% 0%, hsla(342,100%,91%,1) 0, transparent 50%);
+}
+
+.gradient-bg-services {
+  background-color:#0f0e13;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
+}
+
+.gradient-bg-transactions {
+  background-color: #0f0e13;
+  background-image: 
+    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,25%,1) 0, transparent 50%);
+}
+
+.gradient-bg-footer {
+  background-color: #0f0e13;
+  background-image: 
+    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 53%), 
+    radial-gradient(at 50% 150%, hsla(339,49%,30%,1) 0, transparent 50%);
+}
+
+.blue-glassmorphism {
+  background: rgba(31, 47, 78, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.bg-gradient {
+  animation: fading 5s infinite;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 1;
+  } 50% {
+    opacity: 0.5;
+  }
+}
+
+.success-transaction-gradient {
+  background: linear-gradient(93.98deg, #3A1C71 -1.73%, #D76D77 54.11%, #FFAF7B 105.47%);
+  border-radius: 20px;
+}
+
+/* white glassmorphism */
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+body {
+  overflow-x: hidden;
+  
+}
+
+.eth-card {
+  background-image:#fff;background-image:  
+  radial-gradient(at 84% 42%, hsla(23,100%,77%,1) 0, transparent 40%),  
+  radial-gradient(at 59% 44%, hsla(319,89%,70%,1) 0, transparent 41%),  
+  radial-gradient(at 91% 13%, hsla(24,100%,69%,1) 0, transparent 40%),  
+  radial-gradient(at 19% 43%, hsla(206,100%,76%,1) 0, transparent 50%),  
+  radial-gradient(at 73% 66%, hsla(19,100%,69%,1) 0, transparent 42%),  
+  radial-gradient(at 46% 17%, hsla(278,100%,56%,1) 0, transparent 54%),  
+  radial-gradient(at 26% 78%, hsla(195,100%,69%,1) 0, transparent 44%),  
+  radial-gradient(at 96% 85%, hsla(351,100%,56%,1) 0, transparent 50%),  
+  radial-gradient(at 7% 9%, hsla(194,100%,67%,1) 0, transparent 40%),  
+  radial-gradient(at 45% 54%, hsla(286,98%,60%,1) 0, transparent 57%);
+}
+
+.text-gradient {
+  /* Fallback: Set a background color. */
+  background-color: #CA4246;
+  
+  /* Create the gradient. */
+   background-image: linear-gradient(
+        45deg,
+        #e05f98 16.666%, 
+        #e49d75 16.666%, 
+        #ef89b9 33.333%, 
+        #64d1fb 33.333%, 
+        #387ebd 50%, 
+        #223173 50%, 
+        #223173 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+.gradient-text:hover{
+  background-color: #0B111C;
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+      background-size: 650%;
+  }
+  40% {
+      background-size: 650%;
+  }
+  100% {
+      background-size: 100%;
+  }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+  0% {
+      background-size: 100%;
+  }
+  80% {
+      background-size: 650%;
+  }
+  100% {
+      background-size: 650%;
+  }
+}
+
+.gradient-button-span {
+  /* Fallback: Set a background color. */
+  background-color: #000;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(
+    45deg,
+    #000 50%,
+    #fff 50%
+  );
+  
+  /* Set the background size and repeat properties. */
+  background-size: 270%;
+  background-repeat: repeat;
+  background-position: top right;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  
+  animation: button-animation 0.45s 0.15s ease-out forwards;
+}
+
+.gradient-button:hover, .gradient-button:hover span{
+  animation: button-animation-rev 0.45s ease-out forwards;
+}
+
+.gradient-button:hover {
+  box-shadow: 3px 2px 10px 1px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+@keyframes button-animation {
+  0% {
+    background-position: top right;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
+@keyframes button-animation-rev {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+.gradient-button {
+  background-image: linear-gradient(45deg, #fff 50%, #000 50%);
+  background-size: 270%;
+  background-repeat: repeat;
+  background-position: top right;
+  animation: button-animation 0.45s 0.15s ease-out forwards;
+  display: table;
+  text-decoration: none;
+  box-shadow: 7px 4px 20px 1px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.gradient-button .gradient-button-span {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  padding: 0 1.5em;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes drawCircle {
+  0% {
+    stroke-dashoffset: 151px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawCheck {
+  0% {
+    stroke-dashoffset: 36px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#successAnimationCircle {
+  stroke-dasharray: 151px 36px;
+  stroke: #FFF;
+}
+
+#successAnimationCheck {
+  stroke-dasharray: 151px 36px;
+  stroke: #FFF;
+}
+
+#successAnimationResult {
+  fill: #FFF;
+  opacity: 0;
+}
+
+#successAnimation.animated {
+  animation: 1s ease-out 0s 1 both scaleAnimation;
+}
+
+#successAnimationCircle {
+  animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle,
+             0.3s linear 0.9s 1 both fadeOut;
+}
+
+#successAnimationCheck {
+  animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck,
+             0.3s linear 0.9s 1 both fadeOut;
+}
+
+#successAnimationResult {
+  animation: 0.3s linear 0.9s both fadeIn;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
