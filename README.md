@@ -8,7 +8,7 @@
 
 --------
 
- - Technology I use : Reactjs install with Vite, Tailwindcss, Solenium, Redux for Api and JSX.
+ - Technology I use : Reactjs install with Vite, Tailwindcss, Solidity, Redux for Api and JSX.
  - Rabby use RapidApi for the crypto currency news.
  - Connect your MetaMask
  - A smart contract has been deploy to send a gif and message ( send a keyword and Gify Api return a gif ) with a transaction !
