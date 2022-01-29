@@ -22,9 +22,15 @@ export const TransactionsProvider = ({ children }) => {
   const [transactionCount, setTransactionCount] = useState(localStorage.getItem("transactionCount"));
   const [transactions, setTransactions] = useState([]);
 
+  const [transactionSuccess, setTransactionSuccess] = useState(false)
+
   const handleChange = (e, name) => {
     setformData((prevState) => ({ ...prevState, [name]: e.target.value }));
   };
+
+  const closeSuccessPage = () => {
+    setTransactionSuccess(false)
+  }
 
   const getAllTransactions = async () => {
     try {
@@ -124,6 +130,7 @@ export const TransactionsProvider = ({ children }) => {
         await transactionHash.wait();
         console.log(`Success - ${transactionHash.hash}`);
         setIsLoading(false);
+        setTransactionSuccess(true)
 
         const transactionsCount = await transactionsContract.getTransactionCount();
 
@@ -154,6 +161,8 @@ export const TransactionsProvider = ({ children }) => {
         sendTransaction,
         handleChange,
         formData,
+        closeSuccessPage,
+        transactionSuccess
       }}
     >
       {children}
