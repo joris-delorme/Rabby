@@ -1,6 +1,6 @@
 # Hey, Welcome on Rabby's github page 👨🏼‍💻
 
-### This is a small Web 3.0 project for my portfolio, Rabby is in post-production... He will avaible next week 🔥
+### This is a small Web 3.0 project 🔥
 
 > We centralize a decentralized world to make crypto currency easier
 
